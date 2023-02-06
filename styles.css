@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+}
+
+.outerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container{
+    height: 400px;
+    width: 600px;
+    background-color: gray;
+    position: relative;
+}
+
+.ground{
+    background: url('https://img.freepik.com/free-vector/brown-soil-texture-background_1308-20483.jpg');
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+}
+
+.sky{
+    background: url('https://img.freepik.com/free-vector/detailed-jungle-background_23-2148953379.jpg?w=1800&t=st=1675620686~exp=1675621286~hmac=a23b028f6074c962bba294b86f0782e13aa2470fd963dd1b01fc876e1b6ac821');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.obstacle{
+    background: url('https://i.pinimg.com/474x/ec/cb/00/eccb002f545f2c002c17d55d5976b296.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 30px;
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    
+}
+
+.topObstacle{
+    background: url('https://i.pinimg.com/474x/ec/cb/00/eccb002f545f2c002c17d55d5976b296.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 30px;
+    position: absolute;
+    bottom: 100px;
+    right: -30px;
+}
+
+.player{
+    background: url('https://toppng.com/uploads/preview/free-game-character-11549893090wkksr1ro4p.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 200px;
+    right: 400px;
+    border-radius: 50%;
+}
+
+.score{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    font-size: 3rem;
+    color: red;
+}
+
+.results{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.instructions{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    max-width: 300px;
+    font-size: 1.2rem;
+    color: blue;
+   
+}
+
+.leftBorder{
+    position: absolute;
+    left: -150px;
+    top: 0;
+    background-color: #fff;
+    height: 500px;
+    width: 150px;
+    z-index: 5;
+}
+
+.rightBorder{
+    position: absolute;
+    right: -200px;
+    top: 0;
+    background-color: #fff;
+    height: 500px;
+    width: 200px;
+    z-index: 5;
+}
+
+.topBorder{
+    position: absolute;
+    left: -75px;
+    top: -75px;
+    background-color: #fff;
+    height: 75px;
+    width: 1000px;
+    z-index: 5;
+}
+
+.restart{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restartText{
+    background-color: #fff;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.restartText h2{
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+.restartText button{
+    background-color: lightgreen;
+    padding: 7px 14px;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.restartText button:active{
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
